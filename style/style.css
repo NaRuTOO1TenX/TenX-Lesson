@@ -152,6 +152,7 @@ a {
 #products .container .product_blog .product_box img {
     width: 300px;
     transition: 0.7s;
+    /*  */
     /* border-radius: 50%; */
 }
 
