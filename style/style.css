@@ -1,3 +1,157 @@
-body {
-    background-color: red;
+
+/* Universal kodlar */ 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    /* border: 2px solid red; */
+}
+
+
+/* Main qismi */
+
+#main {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../image/banner-bg.jpg) center, no-repeat;
+    height: 100vh;
+    /* background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+}
+
+
+/* header qismi boshlandi */
+
+#header {
+    padding-top: 30px;
+    /* border: 2px dashed blue; */
+}
+
+#header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #555; */
+    /* border-radius: 0 15px 15px 0; */
+}
+
+#header .container .headerLogo h1 {
+    color: brown;
+}
+
+#header .container .navbar ul li {
+    display: inline;
+}
+
+#header .container .navbar ul li a {
+    padding: 15px 30px;
+    display: inline-block;
+    /* background-color: lightgreen; */
+    color: #fff;
+    transition: 1s;
+    font-size: 20px;
+}
+
+#header .container .navbar ul li a:hover {
+    color: orange;
+    /* background-color: blueviolet; */
+    /* border-radius: 15px; */
+}
+
+#header .container .navbar ul li a:active {
+    transform: scale(0.9);
+}
+
+#header .container .navbar ul li:last-child a {
+    background-color: blueviolet;
+    border-radius: 15px
+}
+
+#header .container .navbar ul li:last-child a:hover {
+    background-color: aqua;
+}
+
+
+/* Main title boshlandi */
+
+.mainTitle {
+    margin-top: 40vh;
+    font-size: 50px;
+    letter-spacing: 15px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* Products qismi boshlandi */
+
+#products {
+    padding: 50px 0;
+}
+
+#products .container .product_blog {
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    gap: 50px;
+    justify-content: center;
+}
+
+#products .container .product_blog .product_box .product_box_title {
+    padding: 15px;
+}
+
+#products .container .product_blog .product_box .product_box_title h1 {
+    text-align: center;
+    color: blue;
+    margin-bottom: 15px;
+}
+
+#products .container .product_blog .product_box .product_box_title p {
+    text-align: center;
+    color: #333;
+}
+
+#products .container .product_blog .product_box {
+    /* border: 3px solid #555; */
+    overflow: hidden;
+    box-shadow: 0px 0px 20px #555;
+    border-radius: 20px 20px 0 0;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+#products .container .product_blog .product_box:hover {
+    transform: scale(1.1);
+    /* transform: translateY(-30px); */
+}
+
+#products .container .product_blog .product_box:hover img {
+    transform: rotate(-3deg) scale(1.1);
+}
+
+#products .container .product_blog .product_box .product_box_img {
+    overflow: hidden;
+    /* text-align: center; */
+}
+
+#products .container .product_blog .product_box img {
+    width: 300px;
+    transition: 0.7s;
+    /* border-radius: 50%; */
+}
+
