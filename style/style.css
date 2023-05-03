@@ -1,10 +1,18 @@
 
+/* Fontlar */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Dancing+Script:wght@400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /* Universal kodlar */ 
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 li {
@@ -21,6 +29,26 @@ a {
     /* border: 2px solid red; */
 }
 
+button {
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+}
+
+.progress {
+    background-color: green;
+    color: #fff;
+}
+
+.open {
+    background-color: yellow;
+    color: #000;
+}
+
+.hold {
+    background-color: red;
+    color: #fff;
+}
 
 /* Main qismi */
 
@@ -30,6 +58,7 @@ a {
     /* background-repeat: no-repeat;
     background-position: center;
     background-size: cover; */
+    background-attachment: fixed;
 }
 
 
@@ -101,7 +130,7 @@ a {
 /* Products qismi boshlandi */
 
 #products {
-    padding: 50px 0;
+    padding: 100px 0;
 }
 
 #products .container .product_blog {
@@ -156,3 +185,132 @@ a {
     /* border-radius: 50%; */
 }
 
+
+/* Tables qismi boshlandi */
+
+#group_table {
+    padding: 50px;
+}
+
+#group_table .container .headerTable {
+    text-align: center;
+    padding: 30px 0;
+}
+
+#group_table .container .headerTable h1 {
+    font-family: 'Poppins';
+    letter-spacing: 15px;
+    color: brown;
+}
+
+#group_table .container table {
+    width: 100%;
+    /* text-align: center; */
+    border-collapse: collapse;
+}
+
+#group_table .container table th,
+#group_table .container table td {
+    /* border: 1px solid #000; */
+    padding: 20px;
+    border-collapse: collapse;
+}
+
+#group_table .container table tr:nth-child(even) {
+    background-color: #999;
+}
+
+#group_table .container table tr:nth-child(odd) {
+    background-color: bisque;
+}
+
+#group_table .container table td:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+#group_table .container table tr:hover {
+    background-color: aquamarine;
+}
+
+
+/* Contact section start */
+
+#contact {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background-image: conic-gradient(red, yellow, green);
+}
+
+#contact .container .contactHeader {
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+#contact .container .contactHeader h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 96px;
+    align-items: center;
+    text-transform: uppercase;
+    color: #7C4032;
+}
+
+#contact .container .contactForm {
+    display: flex;
+    max-width: 788px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#contact .container .contactForm .contactCustomInfo input {
+    background: #E6AF99;
+    border-radius: 61px;
+    display: block;
+    width: 374px;
+    height: 56px;
+    border: none;
+    margin-bottom: 14px;
+}
+
+#contact .container .contactForm .contactCustomInfo .contactButton {
+    text-align: center;
+}
+
+#contact .container .contactForm .contactCustomInfo .contactButton button {
+    border: 3px solid #7C4032;
+    border-radius: 61px;
+    width: 168px;
+    height: 56px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+#contact .container .contactForm .contactUsInfo .contactInfo a {
+    margin-bottom: 37px;
+    display: flex;
+}
+
+#contact .container .contactForm .contactUsInfo .contactInfo a img {
+    margin-right: 22px;
+}
+
+#contact .container .contactForm .contactUsInfo .contactInfo a p {
+    font-family: 'TT Hoves';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #333333;
+}
+
+
+/* Footer qismi */
+
+footer {
+    height: 200px;
+    background-color: #555;
+}
